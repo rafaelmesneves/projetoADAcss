@@ -1,0 +1,284 @@
+@import url('https://fonts.googleapis.com/css2?family=Caveat:wght@400..700&family=Edu+AU+VIC+WA+NT+Hand:wght@400..700&family=Josefin+Sans:ital,wght@0,100..700;1,100..700&family=Montserrat:ital,wght@0,100..900;1,100..900&family=Nanum+Gothic&family=Nunito:ital,wght@0,200..1000;1,200..1000&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&family=Ubuntu:ital,wght@0,300;0,400;0,500;0,700;1,300;1,400;1,500;1,700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Caveat:wght@400..700&family=Edu+AU+VIC+WA+NT+Hand:wght@400..700&family=Josefin+Sans:ital,wght@0,100..700;1,100..700&family=Montserrat:ital,wght@0,100..900;1,100..900&family=Nanum+Gothic&family=Nunito:ital,wght@0,200..1000;1,200..1000&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&family=Ubuntu:ital,wght@0,300;0,400;0,500;0,700;1,300;1,400;1,500;1,700&display=swap');
+
+
+* {
+    margin: 0 auto;
+    padding: 0;
+    text-decoration: none;
+    box-sizing: border-box;
+}
+
+header {
+    grid-area: header;
+}
+
+main {
+    grid-area: main;
+}
+
+.container {
+    margin-top: 5rem;
+    display: grid;
+    grid-template-areas: 
+        "header header main main"
+    ;
+}
+
+:root {
+    font-size: 62.5%;
+}
+
+.esquerda {
+    display: flex;
+    flex-direction: column;
+}
+
+span {
+    color: #FF5678; 
+}
+
+.esquerda h1 {
+    color: #000;
+    font-weight: 500;
+    font-family: "Roboto", sans-serif;
+    font-size: 6.4rem;
+}
+
+.esquerda img {
+    margin-top: 3rem;
+    width: 40.9rem;
+    height: 30.7rem;
+}
+
+main {
+    border:0.01rem solid rgba(0, 0, 0, 0.15);
+    border-radius: 1.2rem;
+    width: 60.3rem;
+    height: 52.0rem;
+    display: flex;
+    justify-content: center;
+    padding: 3rem;
+}
+
+.direita h2, .direita-new-id h2, #empresas-cadastradas h2 {
+    margin-top: 1rem;
+    text-align: justify;
+    font-family: "Roboto", sans-serif;
+    font-size: 3.6rem;
+    margin-bottom: 5rem;
+    font-weight: 500;
+}
+
+.direita a {
+    font-family: "Poppins", sans-serif;
+    font-size: 3.6rem;
+    font-weight: 400;
+    color: #FF5678;
+}
+.direita-new-id b a, .container-empresas b a{
+    font-family: "Poppins", sans-serif;
+    font-size: 3.6rem;
+    font-weight: 400;
+    color: #FF5678;
+}
+.button-blue button{
+    border: 2px solid#C0EBF4;
+    background-color:#35E6E9;
+    width: 48.9rem;
+    height: 5.5rem;
+    border-radius: 1rem;
+    color: #ffff;
+    font-family: "Poppins", sans-serif;
+    font-weight: 500;
+    font-size: 2.4rem;
+    margin-bottom: 3rem;
+    cursor: pointer;
+}
+
+.button-pink button {
+    border: 2px solid#C0EBF4;
+    background-color:#FF5678;
+    width: 48.9rem;
+    height: 5.5rem;
+    border-radius: 1rem;
+    color: #ffff;
+    font-family: "Poppins", sans-serif;
+    font-weight: 500;
+    font-size: 2.4rem;
+    margin-bottom: 8rem;
+    cursor: pointer;
+}
+.text-over {
+    display: flex;
+    flex-direction: column;
+}
+.text-over p {
+    font-family: "Poppins", sans-serif;
+    font-weight: 500;
+    text-align: center;
+    font-size: 1.4rem;
+    margin-bottom: 1rem;
+}
+
+.text-over a {
+    font-family: "Poppins", sans-serif;
+    font-weight: 500;
+    text-align: center;
+    font-size: 1.8rem;
+    text-decoration: underline;
+    color: #000;
+}
+
+.direita-new-id {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+}
+
+.direita-new-id h2 {
+    text-align: left;
+    margin: 0;
+    padding: 0;
+    margin-bottom: 4rem;
+}
+
+.direita-new-id form {
+    display: flex;
+    flex-direction: column;
+    margin: 0;
+    padding: 0;
+}
+
+.direita-new-id form label {
+    margin: 0 0 0 1rem;
+    padding: 0;
+    font-size: 1.8rem;
+    font-weight: 400;
+    font-family: "Roboto", sans-serif;
+    margin-bottom: 0.5rem;
+}
+
+.direita-new-id form input {
+    width: 48.9rem;
+    height: 5.5rem;
+    border: 0.1rem solid rgba(0, 0, 0, 0.15);
+    border-radius: 1.2rem;
+    margin-bottom: 0.5rem;
+}
+
+.direita-new-id form select {
+    color: #35E6E9;
+    width: 48.9rem;
+    height: 5.5rem;
+    border: 0.1rem solid rgba(0, 0, 0, 0.15);
+    border-radius: 1.2rem;
+    margin-bottom: 0.5rem;
+}
+.label-point {
+    display: flex;
+    margin-bottom: 4rem;
+}
+
+.label-point button {
+    position: absolute;
+    left: 123.0rem;
+    top: 38.0rem;
+    border-radius: 100%;
+    color: #ffff;
+    background-color: #35E6E9;
+    font-family: "Roboto", sans-serif;
+    border: none;
+    font-size: 2.4rem;
+    font-weight: 700;
+    width: 2.4rem;
+    height: 2.4rem;
+    cursor: pointer;
+}
+
+#empresas-cadastradas {
+    display: flex;
+    flex-direction: column;
+}
+#empresas-cadastradas h2 {
+    font-size: 6.4rem;
+}
+
+.container-empresas {
+    width: 80.0rem;
+    height: 50.5rem;
+    border-radius: 1.2rem;
+    border: 0.1rem solid rgba(0, 0, 0, 0.15);
+}
+
+.container-empresas h3 {
+    font-family: "Roboto", sans-serif;
+    font-size: 3.6rem;
+    font-weight: 500;
+    margin: 0;
+    padding: 0;
+    margin-left: 4rem;
+    margin-top: 4rem;
+}
+
+.container-empresas-espaço {
+    padding: 8rem;
+}
+.container-empresas-espaço p {
+    font-size: 2.4rem;
+    font-family: "Poppins", sans-serif;
+    font-weight: 500;
+    margin: 2rem 0 2rem 0;
+}
+
+.container-empresas-espaço p span {
+    color: #35E6E9;
+    border: 0.1rem solid #35E6E9;
+    padding: 0.5rem 1rem;
+    margin: 1rem 0 1rem 0;
+    border-radius: 1.2rem;
+    margin: 0 1.5rem 0 1.5rem;
+}
+
+.container-empresas-espaço p a {
+    color: #FF5678;
+    text-decoration: underline;
+}
+
+.container-empresas-espaço hr {
+    border: 0.1rem solid rgba(0, 0, 0, 0.15);
+}
+
+.direita-new-id p {
+    font-family: "Poppins", sans-serif;
+    font-size: 1.8rem;
+    font-weight: 600;
+    margin-top: 1rem;
+    margin-bottom: 1rem;
+}
+
+.direita-new-id a {
+    font-family: "Poppins", sans-serif;
+    font-size: 1.8rem;
+    font-weight: 400;
+    color: #FF5678;
+    margin-top: 1rem;
+    margin-bottom: 1rem;
+}
+
+.button-blue1 button{
+    border: 2px solid#C0EBF4;
+    background-color:#35E6E9;
+    width: 48.9rem;
+    height: 5.5rem;
+    border-radius: 1rem;
+    color: #ffff;
+    font-family: "Poppins", sans-serif;
+    font-weight: 500;
+    font-size: 2.4rem;
+    margin-top: 3rem;
+    cursor: pointer;
+}
+
+
+                
